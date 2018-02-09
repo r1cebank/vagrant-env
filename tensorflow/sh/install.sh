@@ -9,11 +9,11 @@ else
 fi
 
 # Change the hostname so we can easily identify what environment we're on:
-echo "nodejs-vagrant" > /etc/hostname
+echo "tensorflow-vagrant" > /etc/hostname
 # Update /etc/hosts to match new hostname to avoid "Unable to resolve hostname" issue:
-echo "127.0.0.1 nodejs-vagrant" >> /etc/hosts
+echo "127.0.0.1 tensorflow-vagrant" >> /etc/hosts
 # Use hostname command so that the new hostname takes effect immediately without a restart:
-hostname nodejs-vagrant
+hostname tensorflow-vagrant
 
 # Install core components
 /vagrant/sh/core.sh
@@ -22,5 +22,4 @@ touch /etc/vagrant-provisioned
 
 echo "--------------------------------------------------"
 echo "Your vagrant instance is running at: 192.168.33.10"
-echo "Be sure to run curl -L https://git.io/v63cS > setup.sh"
-echo "to install your dotfiles"
+echo "Be sure to install your dotfiles"
