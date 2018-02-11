@@ -13,4 +13,4 @@ curl https://get.docker.com | sh
 # add user to docker group
 usermod -aG docker ubuntu
 
-su -c "source /vagrant/sh/user-config.sh" ubuntu
+su -c "source /vagrant/sh/user-config.sh" vagrant
